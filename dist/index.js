@@ -7,8 +7,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     return new (P || (P = Promise))(function (resolve, reject) {
 
         function fulfilled(value) { 
-            try { s
-                tep(generator.next(value)); 
+            try { 
+                step(generator.next(value)); 
             }
              catch (e) { reject(e); } }
 
