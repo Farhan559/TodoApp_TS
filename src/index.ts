@@ -10,7 +10,7 @@ async function main() {
 
   const newToDo = await prisma.toDo.create({
     data: {
-      title: 'Buy groceries',
+      title: 'Buy Items',
     },
   });
   console.log('New ToDo created:', newToDo);
