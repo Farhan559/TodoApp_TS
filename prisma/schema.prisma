@@ -3,9 +3,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+
 generator client {
   provider = "prisma-client-js"
 }
+
 
 model ToDo {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId

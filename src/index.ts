@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-  // Create a new ToDo
+  // Create a new TODO
 
   const newToDo = await prisma.toDo.create({
     data: {
@@ -15,13 +15,13 @@ async function main() {
   });
   console.log('New ToDo created:', newToDo);
 
-  // Retrieve all ToDos
+  // Retrieve all TODOs
 
   const allToDos = await prisma.toDo.findMany();
   console.log('All ToDos:', allToDos);
 
 
-  // Update a ToDo
+  // Update a TODO
 
   const updatedToDo = await prisma.toDo.update({
     where: { id: newToDo.id },
@@ -29,7 +29,7 @@ async function main() {
   });
   console.log('Updated ToDo:', updatedToDo);
 
-  // Delete a ToDo
+  // Delete a TODO
   
   const deletedToDo = await prisma.toDo.delete({
     where: { id: newToDo.id },
@@ -45,3 +45,8 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+
+
+
+
+  

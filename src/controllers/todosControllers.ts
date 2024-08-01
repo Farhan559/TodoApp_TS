@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// Get all ToDos
+// Get all TODO
 
 export const getAllToDos = async (req: Request, res: Response) => {
   try {
@@ -14,7 +14,7 @@ export const getAllToDos = async (req: Request, res: Response) => {
   }
 };
 
-// Create a new ToDo
+// Create a new TODO
 
 export const createToDo = async (req: Request, res: Response) => {
   const { title } = req.body;
@@ -28,7 +28,7 @@ export const createToDo = async (req: Request, res: Response) => {
   }
 };
 
-// Update a ToDo
+// Update a TODO
 
 export const updateToDo = async (req: Request, res: Response) => {
   const { id } = req.params;
@@ -44,7 +44,7 @@ export const updateToDo = async (req: Request, res: Response) => {
   }
 };
 
-// Delete a ToDo
+// Delete a TODO
 
 export const deleteToDo = async (req: Request, res: Response) => {
   const { id } = req.params;
